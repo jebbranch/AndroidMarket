@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KitStore</string>
+    <string name="developer">开发者:Baka,Lan,JinYuan</string>
+    <string name="branch">构建分支：DEV</string>
+    <string name="about_text">关于</string>
+    <string name="splash_appname">KitStore-打造最好的安卓4应用商店！</string>
+    <string name="copyright">CopyRight ©2017-2024 ClockWorks Studio</string>
+    <string name="copyright_about">CopyRight © 2017-2024 ClockWorks Studio</string>
+</resources>
