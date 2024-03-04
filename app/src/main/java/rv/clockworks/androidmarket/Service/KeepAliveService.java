@@ -8,7 +8,6 @@ import android.widget.Toast;
 public class KeepAliveService extends Service {
     public KeepAliveService() {
         //TODO:保活服务
-        Toast.makeText(this,"保活服务已启动" ,Toast.LENGTH_SHORT ).show();
     }
 
     @Override
