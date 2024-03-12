@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/gradual"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <rv.clockworks.androidmarket.view.RoundImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/img_app_local_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/app_default"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/img_app_local_icon"
+            app:layout_constraintLeft_toRightOf="@id/img_app_local_icon"
+            android:id="@+id/txt_app_local_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/appname_" />
+
+        <ImageView
+            android:id="@+id/img_app_local_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/newtip"
+            android:contentDescription="@string/destruction"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/txt_app_local_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <rv.clockworks.androidmarket.view.MarqueeTextView
+            app:layout_constraintLeft_toLeftOf="@id/txt_app_local_name"
+            app:layout_constraintBottom_toBottomOf="@id/img_app_local_icon"
+            android:id="@+id/txt_app_loacl_brief"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/appdesc"
+            app:layout_constraintRight_toLeftOf="@id/txt_app_loacl_version"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_app_loacl_author"
+            app:layout_constraintTop_toTopOf="@id/img_app_local_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/appauthor" />
+
+        <TextView
+            app:layout_constraintBottom_toBottomOf="@id/img_app_local_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/txt_app_loacl_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_app_loacl_author"
+            android:layout_marginRight="5dp"
+            android:text="@string/app_ver" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

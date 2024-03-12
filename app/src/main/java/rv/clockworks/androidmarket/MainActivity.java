@@ -33,16 +33,16 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback() {
             @Override
             public void onFailure(@NotNull Call call, @NotNull IOException e) {
-                mian.setText("Failed to load content");
+                runOnUiThread(() -> mian.setText("Failed to load content"));
             }
 
             @Override
             public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                String html = response.body().string();
-                //mian.setText(html);
+                assert response.body() != null;
+                String json = response.body().string();
+
             }
         });
-        //startService(new Intent(this, KeepAliveService.class));
     }
     class About implements View.OnClickListener {
         @Override

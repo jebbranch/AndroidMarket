@@ -6,4 +6,9 @@
     <string name="splash_appname">KitStore-打造最好的安卓4应用商店！</string>
     <string name="copyright">CopyRight ©2017–2024 ClockWorks Studio</string>
     <string name="copyright_about">CopyRight © 2017–2024 ClockWorks Studio</string>
+    <string name="appname_">app名称</string>
+    <string name="appdesc">app简介</string>
+    <string name="appauthor">app作者</string>
+    <string name="app_ver">app版本</string>
+    <string name="destruction">DESTRUCTION!!!</string>
 </resources>
