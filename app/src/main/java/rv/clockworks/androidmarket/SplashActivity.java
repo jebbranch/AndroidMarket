@@ -15,6 +15,6 @@ public class SplashActivity extends AppCompatActivity {
             Intent intent = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
-        }, 5000); // 延迟3秒跳转到主页面
+        }, 3500); // 延迟3秒跳转到主页面
     }
 }

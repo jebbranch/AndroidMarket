@@ -11,4 +11,7 @@
     <string name="appauthor">app作者</string>
     <string name="app_ver">app版本</string>
     <string name="destruction">DESTRUCTION!!!</string>
+    <string name="ttttt">hahaha</string>
+    <string name="failed_fetch">Failed to load content</string>
+
 </resources>
